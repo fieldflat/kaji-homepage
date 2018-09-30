@@ -1,0 +1,31 @@
+<div class="members">
+
+  <div class="name">
+  <h1>Members</h1>
+    <h2>教授</h2>
+    <% @members.each do |member| %>
+      <% if member.grade == "教授" %>
+        <p><%= member.name %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="name">
+    <h2>M1</h2>
+    <% @members.each do |member| %>
+      <% if member.grade == "M1" %>
+        <p><%= member.name %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="name">
+    <h2>B4</h2>
+    <% @members.each do |member| %>
+      <% if member.grade == "B4" %>
+        <p><%= member.name %></p>
+      <% end %>
+    <% end %>
+  </div>
+
+</div>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>KajiHomepage</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <div id="header" class="header">
+      <div id="logo">
+        <!-- <h1><a href="/">名古屋大学情報学部/大学院情報学研究科 楫研究室</a></h1> -->
+        <h1><%= link_to("名古屋大学情報学部/大学院情報学研究科 楫研究室", "/") %></h1>
+      </div>
+    </div>
+
+    <div id="menu" class="menu">
+      <ul>
+        <div class="menu-list">
+          <!-- <a href="/" class="square_btn">Link</a> -->
+          <a href="/members" class="square_btn">Members</a>
+          <a href="/about" class="square_btn">About</a>
+          <a href="/" class="square_btn">Home</a>
+        </div>
+      </ul>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>

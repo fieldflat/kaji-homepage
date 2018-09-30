@@ -1,0 +1,82 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+body {
+  margin: 0 60px;
+}
+
+.header h1 {
+  text-align: center;
+}
+
+.menu {
+  /* border: 1px solid red; */
+  height: 60px;
+}
+
+.menu-list li {
+  /* border: 2px solid blue; */
+  list-style: none;
+  float: right;
+  margin-right: 20px;
+}
+
+.btn {
+  border: 1px solid green;
+  text-align: center;
+  width: 80px;
+  padding: 3px 5px;
+  background-color: green;
+  color: white;
+  border-radius: 7px;
+}
+
+.menu-list a {
+  float: right;
+  margin-left: 20px;
+}
+
+.square_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+}
+
+.members {
+  /* border: 1px solid red; */
+  margin: 0 40px;
+}
+
+.name p{
+  margin: 20px 40px;
+  /* border: 1px solid red; */
+}
+
+.name h2 {
+  padding-bottom: 1px;
+  border-bottom: 1px solid grey;
+}
