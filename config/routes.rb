@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get "/" => "home#index"
   get "about" => "home#about"
   get "members" => "members#index"
+  get "members/:id" => "members#show"
 
 end

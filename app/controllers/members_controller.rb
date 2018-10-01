@@ -4,4 +4,8 @@ class MembersController < ApplicationController
     @members = Member.all.order(grade: :desc)
   end
 
+  def show
+    @member = Member.find(params[:id])
+  end
+
 end

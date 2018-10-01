@@ -15,7 +15,8 @@
  */
 
 body {
-  margin: 0 60px;
+  margin: 0 80px;
+  background-color: #ffffcc;
 }
 
 .header h1 {
@@ -68,7 +69,7 @@ body {
 
 .members {
   /* border: 1px solid red; */
-  margin: 0 40px;
+  /* margin: 0 40px; */
 }
 
 .name p{
@@ -79,4 +80,13 @@ body {
 .name h2 {
   padding-bottom: 1px;
   border-bottom: 1px solid grey;
+}
+
+.border {
+  padding-bottom: 1px;
+  border-bottom: 1px solid grey;
+}
+
+.intro {
+  padding: 0 40px;
 }

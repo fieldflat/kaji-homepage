@@ -5,7 +5,7 @@
     <h2>教授</h2>
     <% @members.each do |member| %>
       <% if member.grade == "教授" %>
-        <p><%= member.name %></p>
+        <p><%= link_to(member.name, "members/#{member.id}") %></p>
       <% end %>
     <% end %>
   </div>
@@ -14,7 +14,7 @@
     <h2>M1</h2>
     <% @members.each do |member| %>
       <% if member.grade == "M1" %>
-        <p><%= member.name %></p>
+        <p><%= link_to(member.name, "members/#{member.id}") %></p>
       <% end %>
     <% end %>
   </div>
@@ -23,7 +23,7 @@
     <h2>B4</h2>
     <% @members.each do |member| %>
       <% if member.grade == "B4" %>
-        <p><%= member.name %></p>
+        <p><%= link_to(member.name, "members/#{member.id}") %></p>
       <% end %>
     <% end %>
   </div>
